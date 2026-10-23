@@ -1,0 +1,152 @@
+/* Reset Básico e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos do Formulário */
+.form-cadastro h2 {
+    color: #1a73e8;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+.form-cadastro > p {
+    color: #666;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+.form-cadastro h3 {
+    color: #444;
+    font-size: 1.1rem;
+    margin: 24px 0 16px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Grupos de Input */
+.grupo-input {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Inputs, Selects e Textareas */
+.grupo-input input[type="text"],
+.grupo-input input[type="email"],
+.grupo-input input[type="tel"],
+.grupo-input input[type="date"],
+.grupo-input input[type="password"],
+.grupo-input select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.grupo-input input:focus,
+.grupo-input select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+/* Estilo para Input File (Foto do RG) */
+.grupo-input input[type="file"] {
+    padding: 8px;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.grupo-input input[type="file"]:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para Checkboxes (Termos e Comunicação) */
+.grupo-input label:has(input[type="checkbox"]) {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.grupo-input input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #1a73e8;
+    cursor: pointer;
+}
+
+.grupo-input a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.grupo-input a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de Envio */
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #1557b0;
+}
+
+/* Adaptabilidade Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-cadastro h2 {
+        font-size: 1.5rem;
+    }
+}
